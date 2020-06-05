@@ -15,6 +15,10 @@ Record the summary of vim usage
 + **W** -Move **Forward** word ignore puntuation
 + **b** -Move **Backward** word
 + **B** -Move **Backward** word ignore puntuation
++ **e** -Move to the **end** of the current word
++ **ea** -Move to the **end** of the current word and **add**
+
+
 
 **line**
 + **0** -Move to **Beginning** of a line
