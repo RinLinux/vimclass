@@ -27,6 +27,8 @@ Record the summary of vim usage
 + **G** -Move to the **Last** line
 + **:$** -Move to the **Last** line
 + **Ctrl-g** -Information of current line
++ **Ctrl-f** -Page Down
++ **Ctrl-b** -Page Up
 
 ## Same Line Searching
 
