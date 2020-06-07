@@ -62,10 +62,12 @@ Record the summary of vim usage
 + **"[register][operation]** -Put the text to the [rigester], e.g **"ayy**, put the current line to the **a** register
 + **"[REGISTER][operation]** -Append the text to the [REGISTER]
 + **[count][register]** -Repeating the register [count] times
++ **:reg** -Show [registers]
+
 
 ## Undo
 + **u** -Undo
-+ **Ctrl-r** -Undo do
++ **Ctrl-r** -Redo
 
 
 ## Searching
