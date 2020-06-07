@@ -19,7 +19,6 @@ Record the summary of vim usage
 + **ea** -Move to the **end** of the current word and **add**
 
 
-
 **line**
 + **0** -Move to **Beginning** of a line
 + **^** -Move to **Beginning** of a line
@@ -33,6 +32,15 @@ Record the summary of vim usage
 + **Ctrl-g** -Information of current line
 + **Ctrl-f** -Page Down
 + **Ctrl-b** -Page Up
+
+
+## Deleting
+
+**operatin{motion}**
++ **dw** -Delete a word
+
+
+
 
 ## Same Line Searching
 
