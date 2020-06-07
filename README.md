@@ -1,4 +1,4 @@
-# vimclass
+# Vim class
 Record the summary of vim usage
 
 
@@ -9,7 +9,6 @@ Record the summary of vim usage
 + **k** -Move **Up**
 + **l** -Move **Left**
 
-
 **word**
 + **w** -Move **Forward** word
 + **W** -Move **Forward** word ignore puntuation
@@ -17,7 +16,6 @@ Record the summary of vim usage
 + **B** -Move **Backward** word ignore puntuation
 + **e** -Move to the **end** of the current word
 + **ea** -Move to the **end** of the current word and **add**
-
 
 **line**
 + **0** -Move to **Beginning** of a line
@@ -37,12 +35,43 @@ Record the summary of vim usage
 ## Deleting
 
 **operatin{motion}**
-+ **dw** -Delete a word
++ **dw** -Delete a forward word
++ **db** -Delete a backward word
++ **[count]dd** -Delete [count] lines
++ **d[count]w** -Delete [count] words
++ ****
+
+
+## Getting Help
++ **:h {subjetct}** -Get help on a given subject
++ **Ctrl-w Ctrl-w** -switch between the help window and the editing window
+
+
+## Cut Copy and Paste
++ **[count]dd** -Cut [count] lines
++ **[count]yy** -Copy [count] lines
++ **p** -Paste
+
+
+## Registers
++ **""** -Holds the text from **d**, **c**, **x**, and **y** operations
++ **"0** -Holds the last text from yanked(**y**)
++ **"1** -Holds the last text from deleted(**d**) or changed(**c**)
++ **Numbered** regesters shift each **d** and **c**
++ **"[regester]p** -Paste [regester] content
++ **"[regester][operation]** -Put the text to the [regester], e.g **"ayy**, put the current line to the **a** regester
++ **"[REGESTER][operation]** -Append the text to the [REGESTER]
 
 
 
+## Undo
++ **u** -Undo
++ **Ctrl-r** -Undo do
 
-## Same Line Searching
+
+## Searching
+
+### Same Line Searching
 
 + **f{char}** -Forward search
 + **F{char}** -Reverse search
@@ -51,7 +80,7 @@ Record the summary of vim usage
 + **;** -Repeat in the same direction
 + **,** -Repeat in the opposite direction
 
-## Searching
+### Searching
 
 + **/{pattern}** -Forward search
 + **?{pattern}** -Reverse search
