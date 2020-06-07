@@ -57,12 +57,11 @@ Record the summary of vim usage
 + **""** -Holds the text from **d**, **c**, **x**, and **y** operations
 + **"0** -Holds the last text from yanked(**y**)
 + **"1** -Holds the last text from deleted(**d**) or changed(**c**)
-+ **Numbered** regesters shift each **d** and **c**
-+ **"[regester]p** -Paste [regester] content
-+ **"[regester][operation]** -Put the text to the [regester], e.g **"ayy**, put the current line to the **a** regester
-+ **"[REGESTER][operation]** -Append the text to the [REGESTER]
-
-
++ **Numbered** rigesters shift each **d** and **c**
++ **"[register]p** -Paste [rigester] content
++ **"[register][operation]** -Put the text to the [rigester], e.g **"ayy**, put the current line to the **a** register
++ **"[REGISTER][operation]** -Append the text to the [REGISTER]
++ **[count][register]** -Repeating the register [count] times
 
 ## Undo
 + **u** -Undo
