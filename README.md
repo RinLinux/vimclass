@@ -39,7 +39,6 @@ Record the summary of vim usage
 + **db** -Delete a backward word
 + **[count]dd** -Delete [count] lines
 + **d[count]w** -Delete [count] words
-+ ****
 
 
 ## Getting Help
@@ -50,7 +49,8 @@ Record the summary of vim usage
 ## Cut Copy and Paste
 + **[count]dd** -Cut [count] lines
 + **[count]yy** -Copy [count] lines
-+ **p** -Paste
++ **x** -Cut a letter 
++ **[count]p** -Paste [count] times
 
 
 ## Registers
