@@ -97,3 +97,16 @@ Record the summary of vim usage
 
 **Global Substitution**
 + **:%s/{pattern}/{string}/g**
+
+## Macros
+
++ record: q[reg name][commands]q
++ use: [count/: range]@[reg name]
+
+
+## Visual mode
+
++ *v* characterwise visual mode
++ *V* linewise visual mode
++ *Ctrl-v* blockwise visual mode
+
