@@ -22,7 +22,7 @@ Record the summary of vim usage
 + **^** -Move to **Beginning** of a line
 + **$** -Move to **End** of a line
 
-+ **[count]+gg** -Move to [count] line
++ **[count]gg** -Move to [count] line
 + **:[count]** -Move to [count] line
 + **gg** -Move to the **First** line
 + **G** -Move to the **Last** line
@@ -33,12 +33,14 @@ Record the summary of vim usage
 
 
 ## Deleting
++ **x** Delete a character
 
-**operatin{motion}**
+**[count]operatin[count]{motion}**
 + **dw** -Delete a forward word
 + **db** -Delete a backward word
 + **[count]dd** -Delete [count] lines
 + **d[count]w** -Delete [count] words
++ **.** Repeat the previous command
 
 
 ## Getting Help
