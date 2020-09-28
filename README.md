@@ -33,6 +33,7 @@ Record the summary of vim usage
 
 
 ## Deleting
+
 + **x** Delete a character
 
 **[count]operatin[count]{motion}**
@@ -54,7 +55,6 @@ Record the summary of vim usage
 + **x** -Cut a letter 
 + **[count]p** -Paste [count] times
 
-
 ## Registers
 + **""** -Holds the text from **d**, **c**, **x**, and **y** operations
 + **"0** -Holds the last text from yanked(**y**)
@@ -65,6 +65,17 @@ Record the summary of vim usage
 + **"[REGISTER][operation]** -Append the text to the [REGISTER]
 + **[count][register]** -Repeating the register [count] times
 + **:reg** -Show [registers]
+
+
+## Insert Change and Replace
++ **[count]i#** -Insert [count] times # in a line
++ **[count]o#** -Insert [count] lines begin with #
++ **shift[R]** -Replace mode
++ **r** -Replace a character
++ **cw** -Change a word
++ **g~w** -Change a word to Uper case
++ **gUU/uu** -Upercase/lowercase a line
++ **J** -Join line together
 
 
 ## Undo
