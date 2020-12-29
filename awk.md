@@ -16,7 +16,7 @@ awk 是一种很棒的语言，它适合文本处理和报表生成，其语法�
 #### awk使用方法
 
 ```shell
-awk '{pattern + action}' files
+awk '{pattern + action}' filename
 ```
 
 其中 pattern 表示 AWK 在数据中查找的内容，而 action 是在找到匹配内容时所执行的一系列命令。花括号（{}）不需要在程序中始终出现，但它们用于根据特定的模式对一系列指令进行分组。 pattern就是要表示的正则表达式，用斜杠括起来。
@@ -65,6 +65,22 @@ _uucp /var/spool/uucp
 _taskgated /var/empty
 ```
 
+###### BEGIN 和 END 模块
+
+通常，对于每个输入行， awk 都会执行每个脚本代码块一次。然而，在许多编程情况中，可能需要在 awk 开始处理输入文件中的文本之前执行初始化代码。对于这种情况， awk 允许您定义一个 BEGIN 块。
+
+因为 awk 在开始处理输入文件之前会执行 BEGIN 块，因此它是初始化 FS（字段分隔符）变量、打印页眉或初始化其它在程序中以后会引用的全局变量的极佳位置。
+awk 还提供了另一个特殊块，叫作 END 块。 awk 在处理了输入文件中的所有行之后执行这个块。通常， END 块用于执行最终计算或打印应该出现在输出流结尾的摘要信息。
+
+因此相对完成的代码可以表述为：
+
+```shell
+awk options 'BEGIN{} {} END{}' filename
+```
+
+###### 常用awk内置变量
+
+awk内置变量可以用在所有的表达式中，而且可以被用户重置。每当有一个新的文件被读取FILENAME就会被重新赋值每当有一个新的记录被读进来FNR，NF，NR就会被重新赋值。另外，当$0发生改变或有新的字段被创建时NF  就被重置。
 
 
 
@@ -86,10 +102,8 @@ _taskgated /var/empty
 
 
 
+参考资料：
 
-
-
-
-
-ref:https://www.cnblogs.com/ginvip/p/6352157.html
++ https://www.cnblogs.com/ginvip/p/6352157.html
++ https://github.com/wuzhouhui/awk
 
